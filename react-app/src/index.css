@@ -1,0 +1,21 @@
+body{
+  font-family: sans-serif;
+  
+}
+.card{
+  max-height: 400px;
+  max-width: 300px;
+  background-color: burlywood;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  display: inline-block;
+
+}
+.card img{
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}

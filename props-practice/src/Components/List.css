@@ -1,0 +1,11 @@
+.Details table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 5px;
+}
+td,th{
+    padding: 5px;
+    border: 1px solid black;
+    width: 100px;
+}

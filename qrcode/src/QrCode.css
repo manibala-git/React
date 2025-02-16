@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+    color: rgb(195, 0, 255);
+}
+
+
+.qrimg {
+    max-width: 50%; 
+    height: auto;     
+    display: block;  
+    margin: 10px auto; 
+    box-shadow: 0 0 10px rgb(110, 109, 109);
+}
+
+
+.container-md {
+  
+    border: 2px solid rgb(192, 25, 192);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    max-width: 500px;
+    text-align: center; 
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn{
+    margin: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
