@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 350px;
+   padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+.input-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cityInput{
+    flex: 1;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+}
+.search-icon{
+padding: 10px;
+cursor: pointer;
+}
+
+.search-icon img{
+    object-fit: contain;
+    margin: 5px;
+}
+.images {
+    max-width: 30%; 
+    height: auto;
+    object-fit: contain; 
+    min-height: 80px;
+  }
+.image{
+    text-align: center;
+    padding: 20px;
+}
+
+  .temp,
+  .location,
+  .country{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+.temp{
+    font-size: 35px;
+    font-weight: 500;
+}
+.location{
+    color: saddlebrown;
+    font-weight: 500;
+    font-size: 30px;
+}
+.country{
+  color: orangered;
+}
+.cord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.cord div{
+    display: flex;
+    flex-direction: column;
+    color: #888;
+    
+}
+.wind-per,
+.water-per,
+.cord div span{
+   font-size: 18px;
+   color: rebeccapurple;
+   font-weight: bold;
+}
+
+.data-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+.windIcon,
+.waterIcon{
+    height: 30px;
+}
+.data-text{
+    font-size: 12px;
+    color: #888;
+}
+
+.copyright{
+    text-align: center;
+    color:#888 ;
+    font-size: 12px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.copyright span{
+    text-align: center;
+    color:blue;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.load-msg,
+.error-msg,
+.city-msg{
+    color:#888;
+    text-align: center;
+}

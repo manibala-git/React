@@ -19,7 +19,8 @@ export const QrCode = () => {
   }
 
   function downloadQr(){
-    fetch(img).then((Response)=>Response.blob()).then((blob)=>{
+    fetch(img).then((Response)=>Response.blob())
+    .then((blob)=>{
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
       link.download = "qrimage.png";

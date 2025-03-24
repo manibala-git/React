@@ -12,7 +12,7 @@ export const FormDetails = () => {
     })
     function eventHandler(e) {
         const name = e.target.name;
-        // console.log(name);
+        console.log(name);
         const value = e.target.type === "checkbox" ? e.target.checked : e.target.value;
         setUser({ ...user, [name]: value });
     }
