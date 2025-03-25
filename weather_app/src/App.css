@@ -127,6 +127,7 @@ cursor: pointer;
 .copyright span{
     text-align: center;
     color:blue;
+    cursor: pointer;
     font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

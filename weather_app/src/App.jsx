@@ -3,7 +3,8 @@ import './App.css'
 // Images
 import cloudIcon from './assets/clouds.svg'
 import waterIcon from './assets/water.svg'
-import rainIcon from './assets/cloud-rain.svg'
+import thunderstormIcon from './assets/strom.svg'
+import rainIcon from './assets/rain.svg'
 import snowIcon from './assets/snow.svg'
 import drizzleIcon from './assets/cloud-drizzle.svg'
 import clearIcon from './assets/brightness-high.svg'
@@ -56,22 +57,27 @@ export const App = () => {
     const [cityNotFound,setCityNotFound] = useState(false)
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState(null)
-    const weatherIcon={
-        "01d":clearIcon,
-        "01n":clearIcon,
-        "02d":cloudIcon,
-        "02n":cloudIcon,
-        "03d":drizzleIcon,
-        "03n":drizzleIcon,
-        "04d":drizzleIcon,
-        "04n":drizzleIcon,
-        "09d":rainIcon,
-        "09n":rainIcon,
-        "10d":rainIcon,
-        "10n":rainIcon,
-        "13d":snowIcon,
-        "13n":snowIcon,
-    }
+    const weatherIcon = {
+        "01d": clearIcon,
+        "01n": clearIcon,
+        "02d": cloudIcon,
+        "02n": cloudIcon,
+        "03d": drizzleIcon,
+        "03n": drizzleIcon,
+        "04d": drizzleIcon,
+        "04n": drizzleIcon,
+        "09d": rainIcon,
+        "09n": rainIcon,
+        "10d": rainIcon,
+        "10n": rainIcon,
+        "11d": thunderstormIcon,
+        "11n": thunderstormIcon,
+        "13d": snowIcon,
+        "13n": snowIcon,
+        "50d": cloudIcon,
+        "50n": cloudIcon
+      };
+      
 
     const search = async()=>{
         setLoading(true)
@@ -94,15 +100,22 @@ export const App = () => {
             setCountry(data.sys.country);
             setLat(data.coord.lat);
             setLog(data.coord.lon);
+
             const weatherIconCode = data.weather[0].icon;
-            setIcon(weatherIcon[weatherIconCode]||clearIcon);
+            if (data.main.temp < 0) {
+                setIcon(weatherIcon["13d"])
+              }else{
+                setIcon(weatherIcon[weatherIconCode]||clearIcon);
+              }
             setCityNotFound(false);
+            setError(null)
         } catch (error) {
             console.error("An error occured: ", error.message);
             setError("Error Occur");
-            ret
+
         }finally{
             setLoading(false)
+            
         }
     }
 const searchEvent = (e)=>{
@@ -133,7 +146,8 @@ useEffect(function(){
                {cityNotFound&& <div className="city-msg">City Not Found</div>}
              {!loading && !cityNotFound &&  <WeatherDetails icon={icon} temp={temp} city={city} country={country} lat={lat} log={log} humidity={humidity} wind={wind}/>}
 
-                <p className='copyright'>Designed by <span>Mani</span> </p>
+                <p className='copyright'>Designed by <a href="https://www.linkedin.com/in/manibala006/"target="_blank" rel="noopener noreferrer"><span>Mani</span></a> </p>
+                
             </div>
         </>
     )
