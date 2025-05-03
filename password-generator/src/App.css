@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto",sans-serif;
+}
+body{
+    background-color: lightgreen;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    box-shadow: 2px 0 4px black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+.container h3{
+    text-align: center;
+    margin: 10px;
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+}
+.length,
+.checkbox-group,
+.pass{
+    margin: 15px;
+}
+.input-checkbox{
+   margin-top: 10px;
+   align-items: center;
+   display: flex;
+   
+}
+.input-checkbox label{
+    margin-left: 5px;
+}
+
+.checkbox-group button{
+margin-top: 20px;
+display: flex;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+background-color: blue;
+color: white;
+}
+.checkbox-group button:hover{
+    background-color: darkblue;
+}
+
+.length label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.length input{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #888;
+    overflow: hidden;
+    padding: 5px;
+    outline: none;
+    
+}
+.pass{
+    display: flex;
+}
+.pass input{
+    display: flex;
+    flex: 1;
+    border: 1px solid #888;
+    overflow: hidden;
+    padding: 8px;
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+}
+.copy-btn{
+    background-color: green;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 5px;
+}

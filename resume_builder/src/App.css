@@ -1,0 +1,26 @@
+body{
+  background-color: aquamarine;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  text-align: center;
+}
+
+.container{
+  background-color: white;
+  width: 50vw;
+  box-shadow: 0 0 4px black;
+  border-radius: 5px;
+  padding: 20px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+}
+
+.btnn{
+  text-align: center;
+  margin-top: 30px;
+}

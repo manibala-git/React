@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "question": "What is capital of India",
+        "options": ["China","Japan","Delhi","USA"],
+        "CorrectAnswer":"Delhi"
+    },
+    {
+        "id": 2,
+        "question": "What is capital of Tamilnadu",
+        "options": ["Chennai","Mumbai","Delhi","USA"],
+        "CorrectAnswer":"Chennai"
+    },
+    {
+        "id": 3,
+        "question": "Our Country Name is",
+        "options": ["China","India","Japan","USA"],
+        "CorrectAnswer":"India"
+    }
+]
